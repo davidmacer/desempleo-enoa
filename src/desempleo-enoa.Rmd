@@ -4,12 +4,11 @@ knit: (function(input_file, encoding) {
   out_dir <- '../reports';
   rmarkdown::render(input_file,
  encoding=encoding,
- output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+ output_file=file.path(dirname(input_file), out_dir, 'nota.html'))})
 ---
 
-```{r}
+```{r, echo=FALSE}
 library(tweetrmd)
-tweet_embed("https://twitter.com/alexpghayes/status/1211748406730706944")
 ```
 
 La disminución se debió a una menor población ocupada en el sector terciario, principalmente en el comercio, así como restaurantes y servicios de alojamiento.
@@ -18,11 +17,15 @@ En el primer trimestre de 2021, se registró una disminución de 1.6 millones de
 
 De acuerdo con información del Inegi, esta disminución de la PEA se debió a una menor población ocupada, la cual se ve reflejado en la caída de la ocupación en el sector terciario, principalmente en el comercio, así como en los restaurantes y servicios de alojamiento; una disminución de la ocupación en los micronegocios y en condiciones de informalidad, así como un aumento de la desocupación y la subocupación.
 
-![](../img/imagen_01.jpeg)
+```{r, echo=FALSE}
+tweet_screenshot(tweet_url("SantaellaJulio", "1394248458786246657?s=20"))
+```
 
 Así, la población ocupada fue de 53 millones de personas, cifra inferior en 2.1 millones comparada con la del primer trimestre de 2020. La población ocupada de hombres fue de 32.7 millones, cifra menor en 604 mil con respecto al mismo trimestre del año anterior, y la población ocupada de mujeres fue de 20.3 millones, 1.5 millones menos en el mismo lapso.
 
-![](../img/imagen_02.jpeg)
+```{r, echo=FALSE}
+tweet_screenshot(tweet_url("SantaellaJulio", "1394251631173251074?s=20"))
+```
 
 ## Disponibilidad y necesidad de trabajar más tiempo aumenta
 
@@ -32,10 +35,14 @@ En tanto, las personas subocupadas (que tienen la necesidad y disponibilidad de 
 
 La población desempleada (que se encuentra sin trabajar, que estaba disponible y estuvo buscando trabajo en el último mes) representó 4.4 por ciento de la PEA en el primer trimestre de 2021, porcentaje que en igual periodo de 2020 fue de 3.4 por ciento. En términos absolutos, la población desocupada fue de 2.4 millones de personas, monto superior en 455 mil personas comparado con el del primer trimestre de 2020.
 
-![](Aquí va otro twit)
+```{r, echo=FALSE}
+tweet_screenshot(tweet_url("SantaellaJulio", "1394256774811820037?s=20"))
+```
 
 ## Informalidad disminuye
 
 La población ocupada informal, que comprende a los ocupados que son laboralmente vulnerables por la naturaleza de la unidad económica para la que trabajan, como aquellos cuyo vínculo o dependencia laboral no es reconocido por su fuente de trabajo, en el primer trimestre de 2021 fue de 29.2 millones, 1.6 millones menos comparado con igual trimestre de 2020.
 
-![](Aquí va el último twit)
+```{r, echo=FALSE}
+tweet_screenshot(tweet_url("SantaellaJulio", "1394255345111928835?s=20"))
+```
