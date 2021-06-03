@@ -7,6 +7,11 @@ knit: (function(input_file, encoding) {
  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 
+```{r}
+library(tweetrmd)
+tweet_embed("https://twitter.com/alexpghayes/status/1211748406730706944")
+```
+
 La disminución se debió a una menor población ocupada en el sector terciario, principalmente en el comercio, así como restaurantes y servicios de alojamiento.
 
 En el primer trimestre de 2021, se registró una disminución de 1.6 millones de personas en la Población Económicamente Activa (PEA), que representa la fuerza laboral del país, en comparación con el mismo periodo de 2020, al pasar de 57 millones a 55.4 millones, informó el Instituto Nacional de Estadística y Geografía (Inegi).
@@ -18,3 +23,19 @@ De acuerdo con información del Inegi, esta disminución de la PEA se debió a u
 Así, la población ocupada fue de 53 millones de personas, cifra inferior en 2.1 millones comparada con la del primer trimestre de 2020. La población ocupada de hombres fue de 32.7 millones, cifra menor en 604 mil con respecto al mismo trimestre del año anterior, y la población ocupada de mujeres fue de 20.3 millones, 1.5 millones menos en el mismo lapso.
 
 ![](../img/imagen_02.jpeg)
+
+## Disponibilidad y necesidad de trabajar más tiempo aumenta
+
+En tanto, las personas subocupadas (que tienen la necesidad y disponibilidad de ofertar más tiempo de trabajo de lo que su ocupación actual les demanda) aumentaron, al pasar de 4.6 millones en el primer trimestre de 2020 a 7.3 millones en mismo trimestre de 2021, con un aumento de 2.7 millones de personas.
+
+## Desempleo crece
+
+La población desempleada (que se encuentra sin trabajar, que estaba disponible y estuvo buscando trabajo en el último mes) representó 4.4 por ciento de la PEA en el primer trimestre de 2021, porcentaje que en igual periodo de 2020 fue de 3.4 por ciento. En términos absolutos, la población desocupada fue de 2.4 millones de personas, monto superior en 455 mil personas comparado con el del primer trimestre de 2020.
+
+![](Aquí va otro twit)
+
+## Informalidad disminuye
+
+La población ocupada informal, que comprende a los ocupados que son laboralmente vulnerables por la naturaleza de la unidad económica para la que trabajan, como aquellos cuyo vínculo o dependencia laboral no es reconocido por su fuente de trabajo, en el primer trimestre de 2021 fue de 29.2 millones, 1.6 millones menos comparado con igual trimestre de 2020.
+
+![](Aquí va el último twit)
