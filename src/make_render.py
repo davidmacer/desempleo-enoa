@@ -1,7 +1,7 @@
 import jinja2
 import clean_enoa as ce
 
-templateLoader = jinja2.FileSystemLoader(searchpath="./src/")
+templateLoader = jinja2.FileSystemLoader(searchpath="./reports/")
 templateEnv = jinja2.Environment(loader=templateLoader)
 TEMPLATE_FILE = "template.html"
 template = templateEnv.get_template(TEMPLATE_FILE)
