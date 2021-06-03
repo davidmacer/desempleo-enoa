@@ -1,0 +1,20 @@
+---
+title: "Aumenta desempleo en primer trimestre; 2.4 millones de personas están desocupada"
+knit: (function(input_file, encoding) {
+  out_dir <- '../docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+---
+
+La disminución se debió a una menor población ocupada en el sector terciario, principalmente en el comercio, así como restaurantes y servicios de alojamiento.
+
+En el primer trimestre de 2021, se registró una disminución de 1.6 millones de personas en la Población Económicamente Activa (PEA), que representa la fuerza laboral del país, en comparación con el mismo periodo de 2020, al pasar de 57 millones a 55.4 millones, informó el Instituto Nacional de Estadística y Geografía (Inegi).
+
+De acuerdo con información del Inegi, esta disminución de la PEA se debió a una menor población ocupada, la cual se ve reflejado en la caída de la ocupación en el sector terciario, principalmente en el comercio, así como en los restaurantes y servicios de alojamiento; una disminución de la ocupación en los micronegocios y en condiciones de informalidad, así como un aumento de la desocupación y la subocupación.
+
+![](../img/imagen_01.jpeg)
+
+Así, la población ocupada fue de 53 millones de personas, cifra inferior en 2.1 millones comparada con la del primer trimestre de 2020. La población ocupada de hombres fue de 32.7 millones, cifra menor en 604 mil con respecto al mismo trimestre del año anterior, y la población ocupada de mujeres fue de 20.3 millones, 1.5 millones menos en el mismo lapso.
+
+![](../img/imagen_02.jpeg)
