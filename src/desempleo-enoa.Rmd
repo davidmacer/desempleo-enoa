@@ -46,3 +46,6 @@ La población ocupada informal, que comprende a los ocupados que son laboralment
 ```{r, echo=FALSE}
 tweet_screenshot(tweet_url("SantaellaJulio", "1394255345111928835?s=20"))
 ```
+
+---
+La nota original es del periódico milenio ([aquí la nota](https://www.milenio.com/negocios/aumenta-desempleo-en-mexico-durante-el-primer-trimestre-inegi)). Este es un ejercicio para replicar la nota utilizando distintas tecnologías de desarrollo de software.
