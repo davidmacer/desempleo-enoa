@@ -1,2 +1,2 @@
-nota.html: src/make_render.py reports/template.html
-	python src/make_render.py > nota.html
+docs/index.html: src/desempleo-enoa.Rmd
+	R -e "rmarkdown::render('src/desempleo-enoa.Rmd', output_file='../docs/index.html')"
