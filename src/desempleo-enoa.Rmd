@@ -14,9 +14,19 @@ library(rjson)
 
 La disminución se debió a una menor población ocupada en el sector terciario, principalmente en el comercio, así como restaurantes y servicios de alojamiento.
 
-En el primer trimestre de 2021, se registró una disminución de 1.6 millones de personas en la Población Económicamente Activa (PEA), que representa la fuerza laboral del país, en comparación con el mismo periodo de 2020, al pasar de 57 millones a 55.4 millones, informó el Instituto Nacional de Estadística y Geografía (Inegi).
+La disminución se debió a una menor población ocupada en el sector terciario, principalmente en el 
+comercio, así como restaurantes y servicios de alojamiento.
 
-De acuerdo con información del Inegi, esta disminución de la PEA se debió a una menor población ocupada, la cual se ve reflejado en la caída de la ocupación en el sector terciario, principalmente en el comercio, así como en los restaurantes y servicios de alojamiento; una disminución de la ocupación en los micronegocios y en condiciones de informalidad, así como un aumento de la desocupación y la subocupación.
+En el primer trimestre de 2021, se registró una disminución de 1.6 millones de personas en la 
+Población Económicamente Activa (PEA), que representa la fuerza laboral del país, en comparación con
+el mismo periodo de 2020, al pasar de 57 millones a 55.4 millones, informó el Instituto Nacional de 
+Estadística y Geografía (Inegi).
+
+De acuerdo con información del Inegi, esta disminución de la PEA se debió a una menor población 
+ocupada, la cual se ve reflejado en la caída de la ocupación en el sector terciario, principalmente 
+en el comercio, así como en los restaurantes y servicios de alojamiento; una disminución de la 
+ocupación en los micronegocios y en condiciones de informalidad, así como un aumento de la 
+desocupación y la subocupación.
 
 ```{r, echo=FALSE}
 tweet_screenshot(tweet_url("SantaellaJulio", "1394248458786246657?s=20"))
