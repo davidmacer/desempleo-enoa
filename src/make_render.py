@@ -1,11 +1,6 @@
-import jinja2
 import clean_enoa as ce
+last_year_pea = round((ce.get_trimester_pea(4) / 1_000_000), 1)
+first_trimester_pea = round((ce.get_trimester_pea(0) / 1_000_000), 1)
+to_render = {"last_year_pea" : last_year_pea, "first_trimester_pea" : first_trimester_pea}
 
-templateLoader = jinja2.FileSystemLoader(searchpath="./reports/")
-templateEnv = jinja2.Environment(loader=templateLoader)
-TEMPLATE_FILE = "template.html"
-template = templateEnv.get_template(TEMPLATE_FILE)
-to_render = {"last_year_pea" : ce.get_trimester_pea(4), "first_trimester_pea" : ce.get_trimester_pea(0)}
-outputText = template.render(**to_render)
-
-print(outputText)
+print(to_render)
