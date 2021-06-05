@@ -37,7 +37,11 @@ tweet_screenshot(tweet_url("SantaellaJulio", "1394248458786246657?s=20"))
 difference_employed_population = json_data$last_year_employed_population - json_data$first_trimester_employed_population
 ```
 
-Así, la población ocupada fue de `r json_data$first_trimester_employed_population` millones de personas, cifra inferior en `r difference_employed_population` millones comparada con la del primer trimestre de 2020. La población ocupada de hombres fue de 32.7 millones, cifra menor en 604 mil con respecto al mismo trimestre del año anterior, y la población ocupada de mujeres fue de 20.3 millones, 1.5 millones menos en el mismo lapso.
+Así, la población ocupada fue de `r json_data$first_trimester_employed_population` millones de
+personas, cifra inferior en `r difference_employed_population` millones comparada con la del primer
+trimestre de 2020. La población ocupada de hombres fue de 32.7 millones, cifra menor en 604 mil con
+respecto al mismo trimestre del año anterior, y la población ocupada de mujeres fue de 20.3 millones,
+1.5 millones menos en el mismo lapso.
 
 ```{r, echo=FALSE}
 tweet_screenshot(tweet_url("SantaellaJulio", "1394251631173251074?s=20"))
