@@ -20,10 +20,11 @@ difference_pea = json_data$last_year_pea - json_data$first_trimester_pea
 La disminución se debió a una menor población ocupada en el sector terciario, principalmente en el
 comercio, así como restaurantes y servicios de alojamiento.
 
-En el primer trimestre de 2021, se registró una disminución de `r difference_pea` millones de personas en la
-Población Económicamente Activa (PEA), que representa la fuerza laboral del país, en comparación con
-el mismo periodo de 2020, al pasar de `r json_data$last_year_pea` millones a `r json_data$first_trimester_pea` millones, informó el Instituto Nacional de
-Estadística y Geografía (Inegi).
+En el primer trimestre de 2021, se registró una disminución de `r difference_pea` millones de
+personas en la Población Económicamente Activa (PEA), que representa la fuerza laboral del país, en
+comparación con el mismo periodo de 2020, al pasar de `r json_data$last_year_pea` millones a
+`r json_data$first_trimester_pea` millones, informó el Instituto Nacional de Estadística y
+Geografía (Inegi).
 
 De acuerdo con información del Inegi, esta disminución de la PEA se debió a una menor población
 ocupada, la cual se ve reflejado en la caída de la ocupación en el sector terciario, principalmente
