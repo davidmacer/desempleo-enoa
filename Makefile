@@ -8,3 +8,4 @@ docs/data.json: src/make_render.py
 
 clean:
 	rm --force docs/index.html
+	rm --force docs/data.json
