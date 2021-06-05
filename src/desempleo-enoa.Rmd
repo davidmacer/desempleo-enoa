@@ -12,26 +12,27 @@ library(tweetrmd)
 library(rjson)
 ```
 
-La disminución se debió a una menor población ocupada en el sector terciario, principalmente en el comercio, así como restaurantes y servicios de alojamiento.
+```{r, echo=FALSE}
+json_data <- fromJSON(file="../docs/data.json")
+difference_pea = json_data$last_year_pea - json_data$first_trimester_pea
+```
 
-La disminución se debió a una menor población ocupada en el sector terciario, principalmente en el 
+La disminución se debió a una menor población ocupada en el sector terciario, principalmente en el
 comercio, así como restaurantes y servicios de alojamiento.
 
-En el primer trimestre de 2021, se registró una disminución de 1.6 millones de personas en la 
+En el primer trimestre de 2021, se registró una disminución de `r difference_pea` millones de personas en la
 Población Económicamente Activa (PEA), que representa la fuerza laboral del país, en comparación con
-el mismo periodo de 2020, al pasar de 57 millones a 55.4 millones, informó el Instituto Nacional de 
+el mismo periodo de 2020, al pasar de `r json_data$last_year_pea` millones a `r json_data$first_trimester_pea` millones, informó el Instituto Nacional de
 Estadística y Geografía (Inegi).
 
-De acuerdo con información del Inegi, esta disminución de la PEA se debió a una menor población 
-ocupada, la cual se ve reflejado en la caída de la ocupación en el sector terciario, principalmente 
-en el comercio, así como en los restaurantes y servicios de alojamiento; una disminución de la 
-ocupación en los micronegocios y en condiciones de informalidad, así como un aumento de la 
+De acuerdo con información del Inegi, esta disminución de la PEA se debió a una menor población
+ocupada, la cual se ve reflejado en la caída de la ocupación en el sector terciario, principalmente
+en el comercio, así como en los restaurantes y servicios de alojamiento; una disminución de la
+ocupación en los micronegocios y en condiciones de informalidad, así como un aumento de la
 desocupación y la subocupación.
 
 ```{r, echo=FALSE}
 tweet_screenshot(tweet_url("SantaellaJulio", "1394248458786246657?s=20"))
-json_data <- fromJSON(file="../docs/data.json")
-difference_pea = json_data$last_year_pea - json_data$first_trimester_pea
 ```
 
 Así, la población ocupada fue de `r first_trimester_pea` millones de personas, cifra inferior en `r difference_pea` millones comparada con la del primer trimestre de 2020. La población ocupada de hombres fue de 32.7 millones, cifra menor en 604 mil con respecto al mismo trimestre del año anterior, y la población ocupada de mujeres fue de 20.3 millones, 1.5 millones menos en el mismo lapso.
