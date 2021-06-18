@@ -11,16 +11,8 @@ RUN pip install \
 RUN apt-get update; apt-get clean
 RUN apt-get install --yes x11vnc
 RUN apt-get install --yes xvfb
-# Install fluxbox.
 RUN apt-get install --yes fluxbox
-# Install wget.
-RUN apt-get install --yes wget
-# Install wmctrl.
 RUN apt-get install --yes wmctrl
-# Set the Chrome repo.
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-# Install Chrome.
 RUN apt install --yes ./google-chrome-stable_current_amd64.deb
-RUN sed '$d' /usr/bin/google-chrome > exit.txt
-RUN echo 'exec -a "$0" "$HERE/chrome" "$@" --no-sandbox' >> exit.txt && chmod +x exit.txt
-RUN mv exit.txt /usr/bin/google-chrome
+RUN apt --yes install chromium-browser
