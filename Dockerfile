@@ -16,3 +16,6 @@ RUN apt-get install --yes wmctrl
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN apt install --yes ./google-chrome-stable_current_amd64.deb
 RUN apt --yes install chromium-browser
+RUN sed '$d' /usr/bin/google-chrome > exit.txt
+RUN echo 'exec -a "$0" "$HERE/chrome" "$@" --no-sandbox' >> exit.txt && chmod +x exit.txt
+RUN mv exit.txt /opt/google/chrome/google-chrome
