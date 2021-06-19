@@ -1,0 +1,22 @@
+name: tests
+on:
+  pull_request:
+    branches:
+      - develop
+      - master
+  push:
+    branches:
+      - develop
+      - master
+jobs:
+  actions:
+    runs-on: ubuntu-latest
+    env:
+      INEGI_TOKEN: ${{ secrets.INEGI_TOKEN }}
+    steps:
+    - name: Copia repositorio
+      uses: actions/checkout@v2
+    - name: Construye imagen
+      run: docker build --tag desempleo_enoa .
+    - name: Corre pruebas y evalúa cobertura
+      run: docker run --env "INEGI_TOKEN=${INEGI_TOKEN}" desempleo_enoa make docs/index.html
