@@ -1,0 +1,73 @@
+---
+title: "Aumenta desempleo en primer trimestre; 2.4 millones de personas están desocupadas"
+knit: (function(input_file, encoding) {
+  out_dir <- '../docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+---
+
+```{r, echo=FALSE}
+library(tweetrmd)
+library(rjson)
+```
+
+```{r, echo=FALSE}
+json_data <- fromJSON(file="../docs/data.json")
+difference_pea = json_data$last_year_pea - json_data$first_trimester_pea
+```
+
+La disminución se debió a una menor población ocupada en el sector terciario, principalmente en el
+comercio, así como restaurantes y servicios de alojamiento.
+
+En el primer trimestre de 2021, se registró una disminución de `r difference_pea` millones de
+personas en la Población Económicamente Activa (PEA), que representa la fuerza laboral del país, en
+comparación con el mismo periodo de 2020, al pasar de `r json_data$last_year_pea` millones a
+`r json_data$first_trimester_pea` millones, informó el Instituto Nacional de Estadística y
+Geografía (Inegi).
+
+De acuerdo con información del Inegi, esta disminución de la PEA se debió a una menor población
+ocupada, la cual se ve reflejado en la caída de la ocupación en el sector terciario, principalmente
+en el comercio, así como en los restaurantes y servicios de alojamiento; una disminución de la
+ocupación en los micronegocios y en condiciones de informalidad, así como un aumento de la
+desocupación y la subocupación.
+
+```{r, echo=FALSE}
+tweet_screenshot(tweet_url("SantaellaJulio", "1394248458786246657?s=20"))
+difference_employed_population = json_data$last_year_employed_population - json_data$first_trimester_employed_population
+```
+
+Así, la población ocupada fue de `r json_data$first_trimester_employed_population` millones de
+personas, cifra inferior en `r difference_employed_population` millones comparada con la del primer
+trimestre de 2020. La población ocupada de hombres fue de `r json_data$first_trimester_employed_men`
+millones, cifra menor en `r json_data$difference_employed_men` millones con
+respecto al mismo trimestre del año anterior, y la población ocupada de mujeres fue de
+`r json_data$first_trimester_employed_women` millones, `r json_data$difference_employed_women`
+millones menos en el mismo lapso.
+
+```{r, echo=FALSE}
+tweet_screenshot(tweet_url("SantaellaJulio", "1394251631173251074?s=20"))
+```
+
+## Disponibilidad y necesidad de trabajar más tiempo aumenta
+
+En tanto, las personas subocupadas (que tienen la necesidad y disponibilidad de ofertar más tiempo de trabajo de lo que su ocupación actual les demanda) aumentaron, al pasar de 4.6 millones en el primer trimestre de 2020 a 7.3 millones en mismo trimestre de 2021, con un aumento de 2.7 millones de personas.
+
+## Desempleo crece
+
+La población desempleada (que se encuentra sin trabajar, que estaba disponible y estuvo buscando trabajo en el último mes) representó 4.4 por ciento de la PEA en el primer trimestre de 2021, porcentaje que en igual periodo de 2020 fue de 3.4 por ciento. En términos absolutos, la población desocupada fue de 2.4 millones de personas, monto superior en 455 mil personas comparado con el del primer trimestre de 2020.
+
+```{r, echo=FALSE}
+tweet_screenshot(tweet_url("SantaellaJulio", "1394256774811820037?s=20"))
+```
+
+## Informalidad disminuye
+
+La población ocupada informal, que comprende a los ocupados que son laboralmente vulnerables por la naturaleza de la unidad económica para la que trabajan, como aquellos cuyo vínculo o dependencia laboral no es reconocido por su fuente de trabajo, en el primer trimestre de 2021 fue de 29.2 millones, 1.6 millones menos comparado con igual trimestre de 2020.
+
+```{r, echo=FALSE}
+tweet_screenshot(tweet_url("SantaellaJulio", "1394255345111928835?s=20"))
+```
+
+---
+La nota original es del periódico milenio ([aquí la nota](https://www.milenio.com/negocios/aumenta-desempleo-en-mexico-durante-el-primer-trimestre-inegi)). Este es un ejercicio para replicar la nota utilizando distintas tecnologías de desarrollo de software.
